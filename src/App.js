@@ -8,14 +8,14 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
-import Exercises from "./components/Exercises"
-
+import { AuthContextProvider } from "./context/AuthContext";
 
 const App = () => {
   return (
-    <>
+    <> 
+    <AuthContextProvider>
       <BrowserRouter>
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -23,10 +23,10 @@ const App = () => {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/form" element={<Form />} />
-          <Route path="/exercises" element={<Exercises />} />
         </Routes>
         <Footer />
       </BrowserRouter>
+      </AuthContextProvider>
     </>
   );
 };

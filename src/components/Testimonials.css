@@ -1,9 +1,9 @@
 .Testimonials {
   width: 100%;
-  height: 75vh;
+  height: 85vh;
   display: flex;
   gap: 1rem;
-  padding: 0 2rem;
+  padding: 1rem;
   background-color: #262626;
 }
 .left-t {
@@ -22,9 +22,8 @@
 .left-t > :nth-child(3) {
   font-weight: bold;
   font-size: 4rem;
-  
 }
-.left-t>:nth-child(3){
+.left-t > :nth-child(3) {
   color: white;
 }
 .t-name {
@@ -38,7 +37,7 @@
   line-height: 40px;
   color: white;
 }
-.left-t>:nth-child(5){
+.left-t > :nth-child(5) {
   color: white;
 }
 .right-t {
@@ -77,7 +76,203 @@
   font-size: 3rem;
   top: 23rem;
   left: 3rem;
-  color:lightblue;
+  color: lightblue;
   gap: 0.7rem;
   position: absolute;
+}
+
+@media screen and (max-width: 888px) {
+  .Testimonials{
+    padding-top:2rem ;
+    padding-bottom: 1rem;
+  }
+  .left-t > :nth-child(1) {
+    color: orange;
+    font-weight: bold;
+    margin-top: -11rem;
+  }
+  .left-t > :nth-child(2),
+  .left-t > :nth-child(3) {
+    font-weight: bold;
+
+    font-size: 2rem;
+  }
+  .left-t > :nth-child(2) {
+    margin-top: -0.4rem;
+  }
+  .left-t > :nth-child(3) {
+    margin-top: -1rem;
+  }
+  .left-t > :nth-child(4) {
+    margin-top: -1rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+  .left-j > hr {
+    position: absolute;
+    margin-top: -2.7rem;
+    width: 10.5rem;
+
+    border: 2px solid rgb(3, 250, 57);
+    border-radius: 20%;
+  }
+  .left-j {
+    margin-left: 6rem;
+    margin-top: 0rem;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .left-j > div {
+    display: flex;
+
+    gap: 1rem;
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
+  .right-t > :nth-child(1) {
+    position: absolute;
+    width: 11rem;
+    height: 14rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 10rem;
+    top: -9rem;
+  }
+  .right-t > :nth-child(2) {
+    position: absolute;
+    width: 11rem;
+    height: 14rem;
+    /* border: 2px solid orange; */
+    background-color: rgb(192, 128, 9);
+    right: 8rem;
+    top: -7rem;
+  }
+  .right-t > img {
+    position: absolute;
+    width: 11rem;
+    height: 14rem;
+    object-fit: cover;
+    right: 9rem;
+    top: -8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .left-t {
+    margin-top: 15rem;
+  }
+  .left-t > :nth-child(1) {
+    margin-left: -3rem;
+  }
+  .left-t > :nth-child(2),
+  .left-t > :nth-child(3) {
+    margin-left: -3rem;
+  }
+  .left-t > :nth-child(4) {
+    margin-left: -3rem;
+    font-size: 0.8rem;
+    width: 14rem;
+    margin-top: 1rem;
+  }
+
+  .right-t > :nth-child(1) {
+    right: 6rem;
+    top: -8rem;
+  }
+  .right-t > img {
+    right: 5rem;
+    top: -7rem;
+  }
+  .right-t > :nth-child(2) {
+    right: 4rem;
+    top: -6rem;
+  }
+  .left-t > :nth-child(5) {
+    color: white;
+    margin-left: -3rem;
+    margin-top: 1.5rem;
+  }
+  .arrows {
+    display: flex;
+    font-size: 3rem;
+    top: 11rem;
+    left: -1rem;
+    color: lightblue;
+    gap: 0.5rem;
+    position: absolute;
+  }
+  .left-j {
+    display: none;
+  }
+  .right-j {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .Testimonials {
+    margin-top: -1rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .left-t {
+    margin-top: 14rem;
+  }
+  .left-t > :nth-child(1) {
+    font-size: 1.5rem;
+    margin-left: -4.2rem;
+  }
+  .left-t > :nth-child(2),
+  .left-t > :nth-child(3) {
+    margin-left: -4rem;
+    margin-top: -1rem;
+    font-size: 1.3rem;
+  }
+  .left-t > :nth-child(4) {
+    font-size: 0.8rem;
+    width: 16rem;
+    margin-top: 24rem;
+    z-index: 1;
+  
+  }
+
+
+  .right-t > :nth-child(1) {
+    right: 7rem;
+    top: -40rem;
+  }
+  .right-t > img {
+    right: 6rem;
+    top: -39rem;
+  }
+  .right-t > :nth-child(2) {
+    right: 5rem;
+    top: -38rem;
+  }
+  .left-t > :nth-child(5) {
+    color: white;
+    margin-left: -4.5rem;
+    margin-top: -12rem;
+    font-size: 0.7rem;
+  }
+  .arrows {
+    display: flex;
+    font-size: 2rem;
+    top: -21rem;
+    left: 14rem;
+    color: lightblue;
+    gap: 0.5rem;
+    position: absolute;
+    z-index: 1;
+  }
+  .left-j {
+    display: none;
+  }
+  .right-j {
+    display: none;
+  }
 }

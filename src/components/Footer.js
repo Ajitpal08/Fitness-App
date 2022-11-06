@@ -24,9 +24,10 @@ const Footer = () => {
          <div className="footer-right">
           <div>
           <i class="c bi bi-geo-alt-fill"></i>
+          <br></br>
             <p>
               <a href="#">
-               Fitness Center,Kurla camp Road ,421005
+               Fitness Center,Kurla camp Road near Kali Mata Mandir,421005
               </a>
             </p>
           </div>

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "../Styles/style.css";
-import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+
+// import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import "./Testimonials.css";
@@ -14,7 +14,7 @@ const Home = () => {
   const transition= {type:'string',duration :3}
 
   const form = useRef();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,7 +35,6 @@ const Home = () => {
         }
       );
   };
-
   
   return (
     <>
@@ -45,17 +44,18 @@ const Home = () => {
           width="100%"
           height="120%"
           className="home-img"
+          alt="img"
         />
         <div className="upper-content">
           <h1 className="home-head">Fitness Center</h1>
-          <p className="inner-content">
+          <div className="inner-content">
             <motion.div
-              initial={{ left: "200px" }}
+              initial={{ left: "140px" }}
               whileInView={{ left: "8px" }}
               transition={{...transition,type:'tween'}}
             ></motion.div>
             <span>Sweat, Smile and Repeat</span>
-          </p>
+          </div>
         </div>
 
         <div className="upper-content-text">
@@ -90,9 +90,9 @@ const Home = () => {
         </div>
         </div>
       </div>
-      <div className="container-t">
-        <div className="Testimonials">
-          <div className="left-t">
+      <div className="container-t-h">
+        <div className="Testimonials-h">
+          <div className="left-t-h">
             <span>Testimonials</span>
             <span className="stroke-text">What they</span>
             <span>say about us</span>
@@ -103,11 +103,11 @@ const Home = () => {
               exit={{opacity:0, x:100}}
               transition={transition}>{TestimonialsData[selected].review}</motion.span>
             <span>
-              <span className="t-name">{TestimonialsData[selected].name} </span>{" "}
+              <span className="t-name-h">{TestimonialsData[selected].name} </span>{" "}
               - {TestimonialsData[selected].status}
             </span>
           </div>
-          <div className="right-t">
+          <div className="right-t-h">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -124,15 +124,16 @@ const Home = () => {
             animate={{opacity:1, x: 0}}
             exit={{opacity:0, x:-100}}
             transition={transition}
-            src={TestimonialsData[selected].image} />
-            <div className="arrows">
+            src={TestimonialsData[selected].image}
+            alt="img" />
+            <div className="arrows-h">
               <i
                 onClick={() => {
                   selected === 0
                     ? setSelected(tLength - 1)
                     : setSelected((prev) => prev - 1);
                 }}
-                class="bi bi-arrow-left-circle"
+                className="bi bi-arrow-left-circle"
               ></i>
               <i
                 onClick={() => {
@@ -140,14 +141,14 @@ const Home = () => {
                     ? setSelected(0)
                     : setSelected((prev) => prev + 1);
                 }}
-                class="bi bi-arrow-right-circle"
+                className="bi bi-arrow-right-circle"
               ></i>
             </div>
           </div>
         </div>
       </div>
-      <div className="join" id="join-us">
-        <div className="left-j">
+      <div className="join-h" id="join-us-h">
+        <div className="left-j-h">
           <hr />
           <div>
             <span className="stroke-text">READY TO </span>
@@ -158,7 +159,7 @@ const Home = () => {
             <span className="stroke-text">WITH US?</span>
           </div>
         </div>
-        <div className="right-j">
+        <div className="right-j-h">
           <form
             ref={form}
             action=""

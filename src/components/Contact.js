@@ -23,7 +23,7 @@ const Contact = () => {
       <div>
         <textarea rows="4"></textarea>
       </div> 
-       <button type="submit" href="/">Submit</button>
+       <button className='submitbutton' type="submit" href="/">Submit</button>
     </form> 
     </div>
     <div className="contact-img">

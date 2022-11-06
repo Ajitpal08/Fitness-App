@@ -26,7 +26,8 @@ const About = () => {
         <h4 className="para-h4">
           <ul>
             <li>
-               <p>Men and Women Fitness and Workout</p>
+               <p>
+                Men and Women Fitness and Workout</p>
             </li>
             <li>
                <p>Your Diet Plan</p>

@@ -14,15 +14,15 @@ export const TestimonialsData = [
   {
     image: image2,
     review:
-      " Hi myself Chai wala I made the right choice by choosing the Fitness Center and by choosing the right coach",
+      " Hi myself Johnson wala I made the right choice by choosing the Fitness Center and by choosing the right coach",
     name: "Johnson",
-    status: "Chai wala",
+    status: "Engineer",
   },
   {
     image: image3,
     review:
-      "I made the right choice by choosing the Fitness Center  also enjoying the environment and by choosing the right coach",
+      "I made the right choice by choosing the Fitness Center  also enjoying the environment.",
     name: "Andrew jo",
-    status: "Doodhwala",
+    status: "Sportsperson",
   },
 ];
